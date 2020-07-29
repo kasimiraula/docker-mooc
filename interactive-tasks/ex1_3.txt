@@ -1,0 +1,10 @@
+Script started on Wed Jul 29 11:56:50 2020
+[?1034hbash-3.2$ exitdocker images[1Pps -armi nginx --force 84 d2 07[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cimages[Krm --force 84 d2 07[10Pi nginx[4Pps -aimages[C[C[C[C[C[C[C[C[C[Cexit[K[Kexit[Kdocker run -it devopsdockeruh/pull_exercise
+[1G[0JGive me the password: [23Gbasics
+You found the correct password. Secret message is:
+"This is the secret message"
+
+bash-3.2$ exit
+exit
+
+Script done on Wed Jul 29 11:57:13 2020

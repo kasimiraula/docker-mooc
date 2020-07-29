@@ -1,0 +1,11 @@
+Script started on Wed Jul 29 11:40:10 2020
+[?1034hbash-3.2$ docker ps -a
+CONTAINER ID        IMAGE               COMMAND                  CREATED              STATUS                      PORTS               NAMES
+84b50442b2a7        nginx               "/docker-entrypoint.…"   About a minute ago   Up 59 seconds               80/tcp              happy_haibt
+d27712ac0590        nginx               "/docker-entrypoint.…"   About a minute ago   Exited (0) 32 seconds ago                       nostalgic_sinoussi
+07b0413543cb        nginx               "/docker-entrypoint.…"   About a minute ago   Exited (0) 32 seconds ago                       interesting_lalande
+bash-3.2$ 
+bash-3.2$ ext[Kit
+exit
+
+Script done on Wed Jul 29 11:40:30 2020

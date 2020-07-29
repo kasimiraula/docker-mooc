@@ -1,0 +1,30 @@
+Script started on Wed Jul 29 11:41:01 2020
+[?1034hbash-3.2$ docker ps -as
+CONTAINER ID        IMAGE               COMMAND                  CREATED              STATUS                          PORTS               NAMES                 SIZE
+84b50442b2a7        nginx               "/docker-entrypoint.…"   About a minute ago   Up About a minute               80/tcp              happy_haibt           1.12kB (virtual 132MB)
+d27712ac0590        nginx               "/docker-entrypoint.…"   About a minute ago   Exited (0) About a minute ago                       nostalgic_sinoussi    1.11kB (virtual 132MB)
+07b0413543cb        nginx               "/docker-entrypoint.…"   About a minute ago   Exited (0) About a minute ago                       interesting_lalande   1.11kB (virtual 132MB)
+bash-3.2$ docke images[Cr images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+nginx               latest              8cf1bfb43ff5        7 days ago          132MB
+bash-3.2$ docker rm 84 d2 07[1@-[1@-[1@f[1@o[1@r[1@c[1@e[1@ [C[C[C[C[C[C[C[C
+84
+d2
+07
+bash-3.2$ docker rmi nginx
+Untagged: nginx:latest
+Untagged: nginx@sha256:0e188877aa60537d1a1c6484b8c3929cfe09988145327ee47e8e91ddf6f76f5c
+Deleted: sha256:8cf1bfb43ff5d9b05af9b6b63983440f137c6a08320fa7592197c1474ef30241
+Deleted: sha256:f693fa68e7be60da5f2631f94268bb7231278a9e0a10e25798173ce6dd2e4d9d
+Deleted: sha256:ed095e8a33da1985dfdb0b098c2e7ffb035f98f2ff98c648bdf67d4b880a7b3d
+Deleted: sha256:3a069d285e939b95a82cecf0e6ac9b3ac3c21397f9d1c97276f98551cfa02b3d
+Deleted: sha256:18cb14912446a24695198924710f359397929d94acd7d86c8bb0b3dbaa9b672f
+Deleted: sha256:95ef25a3204339de1edf47feaa00f60b5ac157a498964790c58c921494ce7ffd
+bash-3.2$ docker ps -a
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+bash-3.2$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+bash-3.2$ exit
+exit
+
+Script done on Wed Jul 29 11:42:46 2020
