@@ -1,0 +1,1 @@
+kaula$ docker run -d -it --name website_reader ubuntu:16.04 sh -c 'apt-get update && apt-get install curl;  echo "Input website:"; read website; echo "Searching.. $website"; sleep 1;  curl http://$website;'

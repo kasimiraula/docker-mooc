@@ -1,0 +1,9 @@
+Script started on Thu Jul 30 18:43:18 2020
+[?1034hbash-3.2$ exitdocker run -it devopsdockeruh/pull_exerciseGive me the password: basics
+You found the correct password. Secret message is:
+"This is the secret message"
+
+bash-3.2$ exit
+exit
+
+Script done on Thu Jul 30 18:43:30 2020

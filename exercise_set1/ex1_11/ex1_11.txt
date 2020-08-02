@@ -1,0 +1,34 @@
+Script started on Fri Jul 31 13:18:12 2020
+[?1034hbash-3.2$ exittdocker run -d -p 8888:5000 node_frontend[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Pbuild -t node_frontend .[C[C[C[C[C[C[C[C[C[Cexit[Kdocker build -t node_frontend .[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crun -d -p 8888:5000 node_frontend[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Pbuild -t node_frontend .[1P .[1P .[1P .[1P .[1P .[1P .[1P .[1P .b .a .c .k .e .n .d .
+Sending build context to Docker daemon  440.3kB
+Step 1/8 : FROM ubuntu:16.04
+ ---> fab5e942c505
+Step 2/8 : COPY backend-example-docker .
+ ---> Using cache
+ ---> d58e0446d4fc
+Step 3/8 : RUN apt-get update && apt-get install -y curl
+ ---> Using cache
+ ---> 9490a3af48e3
+Step 4/8 : RUN curl -sL https://deb.nodesource.com/setup_10.x | bash && apt install -y nodejs
+ ---> Using cache
+ ---> 6b4721c17b2a
+Step 5/8 : RUN npm install
+ ---> Using cache
+ ---> fcfda06c85e9
+Step 6/8 : RUN pwd
+ ---> Using cache
+ ---> 6ccb184b02d7
+Step 7/8 : RUN ls
+ ---> Using cache
+ ---> 6d1f64ed9189
+Step 8/8 : CMD npm start
+ ---> Using cache
+ ---> db6db169fb56
+Successfully built db6db169fb56
+Successfully tagged node_backend:latest
+bash-3.2$ docker build -t node_backend .[C[C[C[C[C[C[C[C[C[Cexit[Ktdocker run -d -p 8888:5000 node_frontend[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Pbuild -t node_frontend .[C[C[C[C[C[C[C[C[C[Cexit[Kdocker build -t node_frontend .[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crun -d -p 8888:5000 node_frontend[C[C[C[C[C[1Pend[1Pend[1Pend[1Pend[1Pendbendaendcendkend[C[1@-[1@v[1@ [1@$[1@([1@p[1@w[1@d[1@)[1@/[1@l[1@o[1@g[1@s[1@.[1@t[1@x[1@t[1@:[1@/[1@l[1@o[1@g[1@s[1@.[1@t[1@x[1@t[1@ [C[C[C[C[C[C[C[C[C[C[1P[1@9[C[C[1P[1@8
+19e0c1174aaa2cb38bb375a41a386bdf9cdb7a0c6a3b23b4aaa4c42aac97c2d5
+bash-3.2$ ex[K[Kexit
+exit
+
+Script done on Fri Jul 31 13:19:27 2020

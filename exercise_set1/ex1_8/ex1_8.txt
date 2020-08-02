@@ -1,0 +1,11 @@
+Script started on Thu Jul 30 18:13:51 2020
+[?1034hbash-3.2$ touch logs.txt
+bash-3.2$ touch logs.txt[C[C[C[C[C[C[C[C[C[Cexit[Kxitdocker run -v $(pwd)/logs.txt:/usr/app/logs.txt devopsdockeruh/first_volume_exercise
+Wrote to file /usr/app/logs.txt
+Wrote to file /usr/app/logs.txt
+Wrote to file /usr/app/logs.txt
+^CClosing file
+bash-3.2$ exit
+exit
+
+Script done on Thu Jul 30 18:14:22 2020

@@ -1,0 +1,31 @@
+Script started on Fri Jul 31 12:05:53 2020
+[?1034hbash-3.2$ exitdocker build -t node_frontend .
+Sending build context to Docker daemon  557.1kBSending build context to Docker daemon  977.9kB
+Step 1/7 : FROM ubuntu:16.04
+ ---> fab5e942c505
+Step 2/7 : COPY frontend-example-docker .
+ ---> Using cache
+ ---> 1adc06923c4d
+Step 3/7 : RUN pwd
+ ---> Using cache
+ ---> 8843aaaf9947
+Step 4/7 : RUN apt-get update && apt-get install -y curl
+ ---> Using cache
+ ---> 50729403b705
+Step 5/7 : RUN curl -sL https://deb.nodesource.com/setup_10.x | bash && apt install -y nodejs
+ ---> Using cache
+ ---> 4cb37b0c5041
+Step 6/7 : RUN npm install
+ ---> Using cache
+ ---> 7c7b2d3e6b9a
+Step 7/7 : CMD npm start
+ ---> Using cache
+ ---> cdfc87889322
+Successfully built cdfc87889322
+Successfully tagged node_frontend:latest
+bash-3.2$ docker build -t node_frontend .
+bash-3.2$ docker run -d -p 8888:5000 node_frontend
+8d1199bcd693b35ad204b735c3e52fd319eedd6922272bfafc74b7b785ea1b5e
+bash-3.2$ exit
+
+Script done on Fri Jul 31 12:07:34 2020

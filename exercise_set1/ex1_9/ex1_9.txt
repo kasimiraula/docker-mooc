@@ -1,0 +1,7 @@
+Script started on Thu Jul 30 18:36:45 2020
+docker run -d -p 3000:0080 devopsdockeruh/ports_exercise
+323cf543743fdd667bef0c22dec54e5194baf3fbaa0e73087dbd80eda7aeafc9
+bash-3.2$ exit
+exit
+
+Script done on Thu Jul 30 18:37:32 2020

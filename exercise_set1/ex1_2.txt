@@ -7,7 +7,7 @@ d27712ac0590        nginx               "/docker-entrypoint.…"   About a minut
 bash-3.2$ docke images[Cr images
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
 nginx               latest              8cf1bfb43ff5        7 days ago          132MB
-bash-3.2$ docker rm 84 d2 07[1@-[1@-[1@f[1@o[1@r[1@c[1@e[1@ [C[C[C[C[C[C[C[C
+bash-3.2$ docker rm 84 d2 07
 84
 d2
 07

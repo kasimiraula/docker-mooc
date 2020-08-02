@@ -1,0 +1,14 @@
+Script started on Wed Jul 29 12:35:02 2020
+[?1034hbash-3.2$ docker run -it devopsdockeruh/pull_exercise
+Wrote to file /usr/app/logs.txt
+^CClosing file
+
+# done simultaneously in another terminal
+kaula$ docker container ls -a
+CONTAINER ID        IMAGE                               COMMAND                  CREATED             STATUS              PORTS               NAMES
+e310f6de5414        devopsdockeruh/exec_bash_exercise   "docker-entrypoint.s…"   23 seconds ago      Up 23 seconds                           happy_neumann
+(base) LM9-500-020:interactive-tasks kaula$ docker exec -it e3 bash
+root@e310f6de5414:/usr/app# tail -f ./logs.txt 
+"Docker is easy"
+exit
+Script done on Wed Jul 29 12:37:12 2020

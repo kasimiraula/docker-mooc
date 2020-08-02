@@ -1,0 +1,66 @@
+Script started on Thu Jul 30 11:29:37 2020
+nano Dockerfile 
+run docker-clockbuild -t docker-clock .
+Sending build context to Docker daemon  3.072kB
+
+
+Step 1/3 : FROM devopsdockeruh/overwrite_cmd_exercise
+ ---> 3d2b622b1849
+Step 2/3 : WORKDIR /mydir
+ ---> Using cache
+ ---> d12466b92d93
+Step 3/3 : CMD ["-c"]
+ ---> Using cache
+ ---> 725cf96fcb60
+Successfully built 725cf96fcb60
+Successfully tagged docker-clock:latest
+run docker-clock;
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+bash-3.2$ exit
+exit
+
+Script done on Thu Jul 30 11:31:11 2020

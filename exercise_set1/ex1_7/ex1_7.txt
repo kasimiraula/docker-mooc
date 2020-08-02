@@ -1,0 +1,37 @@
+Script started on Thu Jul 30 16:38:13 2020
+[?1034hbash-3.2$ exitdocker run -it curlerbuild -t curler .
+Sending build context to Docker daemon  4.096kB
+Step 1/6 : FROM ubuntu:16.04
+ ---> fab5e942c505
+Step 2/6 : WORKDIR /mydir
+ ---> Using cache
+ ---> d1009129ba5e
+Step 3/6 : RUN apt-get update && apt-get install -y curl
+ ---> Using cache
+ ---> 2bf715c956ff
+Step 4/6 : COPY curl_script.sh .
+ ---> Using cache
+ ---> dd0551d014b3
+Step 5/6 : RUN chmod u+x curl_script.sh
+ ---> Using cache
+ ---> 5de9c95b5560
+Step 6/6 : CMD ["/bin/bash", "curl_script.sh"]
+ ---> Using cache
+ ---> 36a1b1fa37b4
+Successfully built 36a1b1fa37b4
+Successfully tagged curler:latest
+bash-3.2$ docker build -t curler .[C[C[C[C[C[C[C[C[C[Cexit[Kdocker run -it curler
+Input website:
+helsiinki,     nki.fi
+Searching..
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="http://www.helsinki.fi/">here</a>.</p>
+</body></html>
+bash-3.2$ exit
+exit
+
+Script done on Thu Jul 30 16:38:35 2020
