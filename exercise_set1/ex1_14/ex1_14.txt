@@ -1,0 +1,37 @@
+Script started on Mon Aug  3 10:51:49 2020
+[?1034hbash-3.2$ docker build -t _[Krails_example .
+Sending build context to Docker daemon  238.1kB
+Step 1/9 : FROM ruby:2.6.0
+ ---> ef8778f370d5
+Step 2/9 : RUN apt-get update && apt-get install -y curl
+ ---> Using cache
+ ---> 2235af8de034
+Step 3/9 : RUN curl -sL https://deb.nodesource.com/setup_10.x | bash && apt install -y nodejs
+ ---> Using cache
+ ---> 77381f65a1ea
+Step 4/9 : RUN npm install
+ ---> Using cache
+ ---> 7dfb45228b61
+Step 5/9 : COPY rails-example-project ./
+ ---> Using cache
+ ---> 67a79ae26c7d
+Step 6/9 : RUN gem install bundler
+ ---> Using cache
+ ---> 6256fd65bb99
+Step 7/9 : RUN bundle install
+ ---> Using cache
+ ---> 6cec7f9fbfa9
+Step 8/9 : RUN rails db:migrate
+ ---> Using cache
+ ---> af3429d82c1a
+Step 9/9 : CMD rails s
+ ---> Using cache
+ ---> 714983123e5f
+Successfully built 714983123e5f
+Successfully tagged rails_example:latest
+bash-3.2$ docker run -d -p 3001:3000 rails_example
+cbd7b5159e9fd63bacd252c6d30ec7a0f5c11941c84d318e46fbacb39581f61d
+bash-3.2$ exit
+exit
+
+Script done on Mon Aug  3 10:53:06 2020
