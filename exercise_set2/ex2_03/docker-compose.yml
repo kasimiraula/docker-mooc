@@ -1,0 +1,22 @@
+version: "3.5"
+
+services:
+  frontend:
+    image: node_frontend
+    build: .
+    ports:
+      - 8080:5000
+    environment:
+      - API_URL=http://localhost:8888
+    container_name: node-frontend-compose
+  backend:
+    image: node_backend
+    build: .
+    ports:
+      - 8888:8000
+    volumes:
+      - ./logs.txt:/usr/app/logs.txt
+    environment:
+      - FRONT_URL=http://localhost:8080
+    container_name: node-backend-compose
+

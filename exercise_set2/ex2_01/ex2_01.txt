@@ -1,0 +1,15 @@
+Script started on Tue Aug  4 11:05:56 2020
+[?1034hbash-3.2$ heroku container:release web[C[C[C[C[C[C[C[C[C[C[3Pdocker run simple_clicker[C[C[C[C[C[C[C[C[C[Cheroku container:release web[C[C[C[C[C[C[C[C[C[C[Kdocker [K-compose up first-volume-exercise
+Starting first-volume-from-compose-file ... 
+[1A[2KStarting first-volume-from-compose-file ... [32mdone[0m[1BAttaching to first-volume-from-compose-file
+[36mfirst-volume-from-compose-file |[0m Wrote to file /usr/app/logs.txt
+[36mfirst-volume-from-compose-file |[0m Wrote to file /usr/app/logs.txt
+^CGracefully stopping... (press Ctrl+C again to force)
+Stopping first-volume-from-compose-file ... 
+[1A[2KStopping first-volume-from-compose-file ... [32mdone[0m[1Bbash-3.2$ cat logs.txt 
+Tue, 04 Aug 2020 08:06:21 GMT
+Tue, 04 Aug 2020 08:06:24 GMT
+bash-3.2$ exit
+exit
+
+Script done on Tue Aug  4 11:06:36 2020

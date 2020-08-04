@@ -1,0 +1,8 @@
+Script started on Tue Aug  4 11:12:49 2020
+[?1034hbash-3.2$ docker-compose up -d
+Starting ports-exercise-from-docker-compose ... 
+[1A[2KStarting ports-exercise-from-docker-compose ... [32mdone[0m[1Bbash-3.2$ curl localhost:8888
+Ports configured correctly!!bash-3.2$ r[Kexit
+exit
+
+Script done on Tue Aug  4 11:13:12 2020
