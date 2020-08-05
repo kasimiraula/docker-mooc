@@ -1,6 +1,9 @@
-version: '3'
+version: '3.5' 
 
 services:
-	youtube-dl-ubuntu:
-		image: kaulahydocker/SOMEREPO
-		build: .
+  db:
+    image: postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_PASSWORD: example
+    container_name: db_redmine

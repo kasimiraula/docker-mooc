@@ -1,0 +1,45 @@
+version: "3.5"
+
+services:
+
+  frontend:
+    image: node_frontend
+    build: ~/Documents/course_materials/docker-mooc/exercise_set1/ex1_12/frontend/
+    ports:
+      - 8080:5000
+    environment:
+      - API_URL=http://localhost:8888
+    container_name: node-frontend
+
+  backend:
+    image: node_backend
+    build: ~/Documents/course_materials/docker-mooc/exercise_set1/ex1_12/backend/
+    ports:
+      - 8888:8000
+    volumes:
+      - ./logs.txt:/usr/app/logs.txt
+    container_name: node-backend
+    environment:
+      - FRONT_URL=http://localhost:8080
+      - REDIS=redis
+      - DB_USERNAME=user
+      - DB_PASSWORD=example
+      - DB_HOST=db_postgres
+    depends_on:
+      - redis
+      - db
+
+  db:
+    image: postgres
+    restart: unless-stopped
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=example
+    container_name: db_postgres
+
+  redis:
+    image: redis
+    restart: unless-stopped
+    container_name: redis_container
+    environment:
+      - REDIS=localhost

@@ -16,7 +16,13 @@ services:
       - 8888:8000
     volumes:
       - ./logs.txt:/usr/app/logs.txt
+    container_name: node-backend-compose
     environment:
       - FRONT_URL=http://localhost:8080
-    container_name: node-backend-compose
+      - REDIS=database
+      - REDIS_PORT=6379
+  database:
+    image: redis
+
+
 
