@@ -2,4 +2,6 @@ backend-example-docker/
 frontend-example-docker/
 spring-example-project/
 scaling-exercise/
-
+ml-kurkkumopo-backend/
+ml-kurkkumopo-frontend/
+ml-kurkkumopo-training/
