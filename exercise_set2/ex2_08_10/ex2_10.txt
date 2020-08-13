@@ -1,0 +1,1 @@
+I removed API_URL and FRONT_URL environmental variables from both of the dockerfiles and everything sarted working.
